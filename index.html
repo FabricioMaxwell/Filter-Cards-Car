@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/main.css">
+    <title>FIlter Cadrds Using javascript</title>
+</head>
+<body>
+    <div class="btnContainer">
+        <button class="btn active" onclick="filterSelection('all')">Show All</button>
+        <button class="btn" onclick="filterSelection('suv')">SUV</button>
+        <button class="btn" onclick="filterSelection('sedan')">Sedan</button>
+        <button class="btn" onclick="filterSelection('hatchback')">Hatchback</button>
+    </div>
+    <main>
+        <section class="container-content">
+
+            <div class="filterCards suv" id="filterCards">
+                <div class="card suv" >
+                    <img src="./assets/jeep meridian.jpg" alt="jeep-meridian">
+                    <div class="description">
+                        <h4 class="title">Jeep Meridian</h4>
+                        <p>A Jeep </p>
+                    </div>
+                </div>
+                <div class="card suv">
+                    <img src="./assets/honda hrv.jpg" alt="Honda-Hrv">
+                    <div class="description">
+                        <h4 class="title">Honda Hrv</h4>
+                        <p>honda hrc</p>
+                    </div>
+                </div>
+                <div class="card suv">
+                    <img src="./assets/tcross.jpg" alt="T-cross">
+                    <div class="description">
+                        <h4 class="title">T-cross</h4>
+                        <p>T-cross
+                        </p>
+                    </div>
+                </div>
+                <div class="card hachback">
+                    <img src="./assets/honda fit.jpg" alt="Hondda Fit">
+                    <div class="description">
+                        <h4 class="title">Honda Fit</h4>
+                        <p>O Honda Fit</p>
+                    </div>
+                </div> 
+                <div class="card sedan">
+                    <img src="./assets/corolla.jpg" alt="Corolla">
+                    <div class="description">
+                        <h4>Toyota Corolla</h4>
+                        <p>Toyota Corolla</p>
+                    </div>
+                </div>  
+            </div>
+
+        </section>
+    </main>  
+    <script src="./script.js"></script>
+</body>
+</html>
