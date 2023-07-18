@@ -20,11 +20,11 @@ function removeActiveClasses() {
 }
 
 function filters(category) {
-    filter.querySelectorAll(".filterCard").forEach((filters1) => {
-        if (category === "all" || filters1.dataset.category === category) {
-            filters1.style.display = "flex"
+    filter.querySelectorAll(".filterCard").forEach((filters) => {
+        if (category === "all" || filters.dataset.category === category) {
+            filters.style.display = "flex"
         } else {
-            filters1.style.display = "none"
+            filters.style.display = "none"
         }
     })
 }
