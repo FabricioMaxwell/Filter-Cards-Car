@@ -8,16 +8,16 @@
     <title>FIlter Cadrds Using javascript</title>
 </head>
 <body>
-    <div class="btnContainer">
-        <button class="btn active" onclick="filterSelection('all')">Show All</button>
-        <button class="btn" onclick="filterSelection('suv')">SUV</button>
-        <button class="btn" onclick="filterSelection('sedan')">Sedan</button>
-        <button class="btn" onclick="filterSelection('hatchback')">Hatchback</button>
+    <div class="myBtnContainer">
+        <button class="btn active" data-category="all">Show All</button>
+        <button class="btn" data-category="suv">SUV</button>
+        <button class="btn" data-category="sedan">Sedan</button>
+        <button class="btn" data-category="Hatchback">Hatchback</button>
     </div>
     <main>
-        <section class="container-content">
+        <section class="container-filters" id="container-filters">
 
-            <div class="filterCards suv" id="filterCards">
+            <div class="filterCard" data-category="suv">
                 <div class="card suv" >
                     <img src="./assets/jeep meridian.jpg" alt="jeep-meridian">
                     <div class="description">
@@ -25,14 +25,15 @@
                         <p>A Jeep </p>
                     </div>
                 </div>
-                <div class="card suv">
+            
+                <div class="card">
                     <img src="./assets/honda hrv.jpg" alt="Honda-Hrv">
                     <div class="description">
                         <h4 class="title">Honda Hrv</h4>
                         <p>honda hrc</p>
                     </div>
                 </div>
-                <div class="card suv">
+                <div class="card">
                     <img src="./assets/tcross.jpg" alt="T-cross">
                     <div class="description">
                         <h4 class="title">T-cross</h4>
@@ -40,14 +41,19 @@
                         </p>
                     </div>
                 </div>
-                <div class="card hachback">
+            </div>
+            <div class="filterCard" data-category="Hatchback">
+                <div class="card">
                     <img src="./assets/honda fit.jpg" alt="Hondda Fit">
                     <div class="description">
                         <h4 class="title">Honda Fit</h4>
                         <p>O Honda Fit</p>
                     </div>
-                </div> 
-                <div class="card sedan">
+                </div>
+            </div>
+
+            <div class="filterCard" data-category="sedan">
+                <div class="card">
                     <img src="./assets/corolla.jpg" alt="Corolla">
                     <div class="description">
                         <h4>Toyota Corolla</h4>

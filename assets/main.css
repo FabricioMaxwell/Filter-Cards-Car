@@ -8,7 +8,7 @@ body {
 }
 
 
-.btnContainer {
+.myBtnContainer {
     margin-top: 10rem;
 }
 
@@ -34,14 +34,15 @@ body {
     transform: scale(0.98);
 }
 
-.container-content {
-    margin: 1rem;
+.container-filters {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
 }
 
-.filterCards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.filterCard {
+    display: flex;
     gap: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .card {
